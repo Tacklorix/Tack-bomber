@@ -225,7 +225,7 @@ def filmnet(phone):
         Filmnet = get(timeout=5, url=fnU, headers=fNh).json()
         if Filmnet['meta']['operation_result'] == 'success':
             print(f'{g}(Filmnet) {w}Code Was Sent')
-            return True
+            return True #tacklorix
     except:
         pass
 
@@ -316,7 +316,7 @@ def azki(phone):
 def nobat(phone):
     noJ = {'mobile': phone}
     noU = 'https://nobat.ir/api/public/patient/login/phone'
-    noH = {
+    noH = { #takloorix
 'accept': '*/*',
 'accept-encoding': 'gzip, deflate, br',
 'accept-language': 'en-US,en;q=0.9',
@@ -471,7 +471,7 @@ def didnegar(phone):
         if ok['code'] == '1':
             print(f'{g}(DideNegar) {w}Code Was Sent')
             return True
-    except:
+    except:#xirolkcat
         pass
 def baskol(phone):
     baJ = {

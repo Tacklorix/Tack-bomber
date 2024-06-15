@@ -205,7 +205,7 @@ def sTrip(phone):
             return True
     except:
         pass
-
+#xirolkcat
 def filmnet(phone):
     fnU = f"https://api-v2.filmnet.ir/access-token/users/{phone}/otp"
     fNh = {'Connection': 'keep-alive',
